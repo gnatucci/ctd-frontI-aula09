@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap");
+    </style>
+    <title>Mesa de trabalho</title>
+    <style type="text/css">
+      * {
+        box-sizing: border-box;
+        list-style: none;
+        padding: 0;
+        font-family: "Montserrat", sans-serif;
+      }
+      /* 
+            Guilherme Natucci
+            Daniel Welinton de Souza
+            Tamiris Rezende
+            Moises Rosa Carrielo
+            Thalles Denner
+            */
+      body {
+        width: 1000px;
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 40px;
+      }
+
+      .preco {
+        position: relative;
+      }
+
+      .preco__cambio {
+        position: absolute;
+        float: center;
+        text-align: top;
+        color: rgb(94, 94, 95);
+        font-size: 25px;
+        left: 50px;
+        top: 10px;
+      }
+
+      .preco__valor {
+        float: center;
+        text-align: center;
+        color: rgb(15, 3, 184);
+        font-size: 70px;
+        font-weight: 900;
+      }
+
+      .preco__moeda {
+        float: center;
+        text-align: center;
+        color: rgb(15, 3, 184);
+        font-size: 15px;
+        font-weight: 700;
+        position: absolute;
+        top: 20px;
+      }
+
+      .preco__total {
+        color: gray;
+        font-weight: 400;
+      }
+
+      .plano {
+        margin: 0 auto;
+        width: 300px;
+        border: 2px solid gray;
+        border-radius: 20px;
+      }
+
+      .plano__sessaoMy-5 {
+        border: 1px solid gray;
+        border-radius: 20px 20px 0 0;
+      }
+
+      .lista {
+      }
+
+      .lista__item {
+        margin: 30px;
+        color: gray;
+      }
+      
+      .botao {
+          width: 100px;
+          height: 30px;
+        background-color: rgb(158, 243, 0);
+        border-radius: 10px;
+        font-size: .8rem
+      }
+      
+    </style>
+  </head>
+  <body>
+    <!-- O código HTML pode ser alterado se considerarem necessário. -->
+    <div class="plano">
+      <div class="plano__sessaoMy-5">
+        <p class="preco">
+          <span class="preco__cambio">R$</span>
+          <span class="preco__valor">632</span>
+          <span class="preco__moeda">,39</span>
+        </p>
+        <p class="preco__total">Valor anual: R$ 5.465,09</p>
+        <button class="botao">Comprar</button>
+      </div>
+      <ul class="lista">
+        <li class="lista__item">
+          <img src="./imagens/checked.png" alt="Ícone verifado verde" />
+        </li>
+        <li class="lista__item">100km</li>
+        <li class="lista__item">Com ar - 7 dias</li>
+        <li class="lista__item">
+          <img src="./imagens/checked.png" alt="Ícone verificado verde" />
+        </li>
+        <li class="lista__item">
+          <img src="./imagens/checked.png" alt="Ícone verificado verde" />
+        </li>
+        <li class="lista__item">
+          <img src="./imagens/unchecked.png" alt="Ícone de um X vermelho" />
+        </li>
+        <li class="lista__item">R$ 50 mil</li>
+      </ul>
+    </div>
+  </body>
+</html>
